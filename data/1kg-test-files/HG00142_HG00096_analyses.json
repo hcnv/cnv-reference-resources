@@ -1,0 +1,116 @@
+{
+    "meta": {
+        "apiVersion": "v2.1.0-beaconplus",
+        "beaconId": "org.progenetix",
+        "info": {
+            "originalQueries": {
+                "entities": {
+                    "biosample": {
+                        "collection": "biosamples",
+                        "query": {
+                            "id": {
+                                "$in": [
+                                    "onekgbs-HG00142",
+                                    "onekgbs-HG00096"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "expand": false,
+                "variantIdQuery": {
+                    "biosampleId": {
+                        "$in": [
+                            "onekgbs-HG00142",
+                            "onekgbs-HG00096"
+                        ]
+                    }
+                }
+            }
+        },
+        "receivedRequestSummary": {
+            "apiVersion": "v2.1.0-beaconplus",
+            "datasetIds": [
+                "progenetix"
+            ],
+            "includeResultsetResponses": "HIT",
+            "pagination": {
+                "currentPage": null,
+                "limit": 10,
+                "nextPage": null,
+                "previousPage": null,
+                "skip": 0
+            },
+            "requestParameters": {
+                "$schema": null
+            },
+            "requestedGranularity": "record",
+            "requestedSchemas": [
+                {
+                    "entityType": "analysis",
+                    "schema": "https://progenetix.org/services/schemas/analysis/"
+                }
+            ],
+            "testMode": false
+        },
+        "returnedGranularity": "record",
+        "returnedSchemas": [
+            {
+                "entityType": "analysis",
+                "schema": "https://progenetix.org/services/schemas/analysis/"
+            }
+        ],
+        "testMode": false
+    },
+    "response": {
+        "$schema": null,
+        "resultSets": [
+            {
+                "exists": true,
+                "id": "progenetix",
+                "info": {
+                    "counts": {
+                        "biosamples": 2,
+                        "callsets": 2,
+                        "variants": 1026
+                    }
+                },
+                "results": [
+                    {
+                        "analysisDate": "1967-11-11",
+                        "biosampleId": "onekgbs-HG00096",
+                        "id": "onekgcs-HG00096",
+                        "individualId": "onekgind-HG00096",
+                        "pipelineName": "progenetix",
+                        "platformModel": {
+                            "id": "OBI:0002117",
+                            "label": "whole genome sequencing assay"
+                        },
+                        "updated": "2023-07-03T19:38:06.304933"
+                    },
+                    {
+                        "analysisDate": "1967-11-11",
+                        "biosampleId": "onekgbs-HG00142",
+                        "id": "onekgcs-HG00142",
+                        "individualId": "onekgind-HG00142",
+                        "pipelineName": "progenetix",
+                        "platformModel": {
+                            "id": "OBI:0002117",
+                            "label": "whole genome sequencing assay"
+                        },
+                        "updated": "2023-07-03T19:38:18.467813"
+                    }
+                ],
+                "resultsCount": 2,
+                "resultsHandovers": [],
+                "setType": "dataset"
+            }
+        ]
+    },
+    "responseSummary": {
+        "exists": true,
+        "numTotalResults": 2
+    }
+}
+
+

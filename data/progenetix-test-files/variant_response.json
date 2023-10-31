@@ -1,0 +1,2065 @@
+{
+    "meta": {
+        "apiVersion": "v2.1.0-beaconplus",
+        "beaconId": "org.progenetix",
+        "info": {
+            "originalQueries": {
+                "entities": {
+                    "genomicVariant": {
+                        "collection": "variants",
+                        "query": {
+                            "_id": {
+                                "$in": [
+                                    "606ea2fd8c2f487fff964b00",
+                                    "606ea2fe8c2f487fff9660a7",
+                                    "606ea2fe8c2f487fff966c96",
+                                    "606ea2fe8c2f487fff9673aa",
+                                    "606ea2fe8c2f487fff9699fe",
+                                    "606ea2ff8c2f487fff96b937",
+                                    "606ea2ff8c2f487fff96c032",
+                                    "606ea2ff8c2f487fff96c9cb",
+                                    "606ea2ff8c2f487fff96e5aa",
+                                    "606ea2ff8c2f487fff96eacd",
+                                    "606ea2ff8c2f487fff96f6c5",
+                                    "606ea3008c2f487fff972bac",
+                                    "606ea3008c2f487fff973345",
+                                    "606ea3008c2f487fff973fca",
+                                    "606ea3028c2f487fff97cb7c",
+                                    "606ea3038c2f487fff98140c",
+                                    "606ea3038c2f487fff981697",
+                                    "606ea3038c2f487fff982cce",
+                                    "606ea3048c2f487fff987717",
+                                    "606ea3048c2f487fff98a767",
+                                    "606ea3048c2f487fff98a9b3",
+                                    "606ea3058c2f487fff98c463",
+                                    "606ea3058c2f487fff98d31a",
+                                    "606ea3058c2f487fff98db20",
+                                    "606ea3058c2f487fff98fec2",
+                                    "606ea3068c2f487fff9927d9",
+                                    "606ea3068c2f487fff995b19",
+                                    "606ea3078c2f487fff998d37",
+                                    "606ea3088c2f487fff99f5ae",
+                                    "606ea3088c2f487fff99f815",
+                                    "606ea3088c2f487fff9a1c49",
+                                    "606ea3098c2f487fff9a77a5",
+                                    "606ea30a8c2f487fff9a9bb6",
+                                    "606ea30a8c2f487fff9ab418",
+                                    "606ea30a8c2f487fff9ad0c4",
+                                    "606ea30b8c2f487fff9add34",
+                                    "606ea30b8c2f487fff9ae256",
+                                    "606ea30b8c2f487fff9af135",
+                                    "606ea30b8c2f487fff9af8b1",
+                                    "606ea30b8c2f487fff9affc7",
+                                    "606ea30b8c2f487fff9b070a",
+                                    "606ea30b8c2f487fff9b0e35",
+                                    "606ea30b8c2f487fff9b1f3a",
+                                    "606ea30b8c2f487fff9b3215",
+                                    "606ea30d8c2f487fff9bb29b",
+                                    "606ea30e8c2f487fff9c3689",
+                                    "606ea30f8c2f487fff9c7bfb",
+                                    "606ea30f8c2f487fff9c9ecf",
+                                    "606ea3108c2f487fff9cc040",
+                                    "606ea3108c2f487fff9ceafc",
+                                    "606ea3108c2f487fff9cfce7",
+                                    "606ea3118c2f487fff9d0013",
+                                    "606ea3118c2f487fff9d1624",
+                                    "606ea3128c2f487fff9d87f8",
+                                    "606ea3148c2f487fff9e2eb8",
+                                    "606ea3158c2f487fff9eb74a",
+                                    "606ea3168c2f487fff9ee291",
+                                    "606ea3168c2f487fff9f1037",
+                                    "606ea3178c2f487fff9f6665",
+                                    "606ea3178c2f487fff9f68ba",
+                                    "606ea3188c2f487fff9fa09b",
+                                    "606ea3198c2f487fff9fd83e",
+                                    "606ea3198c2f487fffa00aec",
+                                    "606ea3198c2f487fffa01200",
+                                    "606ea3198c2f487fffa0203c",
+                                    "606ea31a8c2f487fffa02761",
+                                    "606ea31a8c2f487fffa0491b",
+                                    "606ea31a8c2f487fffa04e5a",
+                                    "606ea31a8c2f487fffa050db",
+                                    "606ea31a8c2f487fffa05f7f",
+                                    "606ea31a8c2f487fffa0691f",
+                                    "606ea31a8c2f487fffa07c5f",
+                                    "606ea31b8c2f487fffa08ac1",
+                                    "606ea31b8c2f487fffa0943f",
+                                    "606ea31b8c2f487fffa0a9bc",
+                                    "606ea31b8c2f487fffa0ac33",
+                                    "606ea31b8c2f487fffa0c660",
+                                    "606ea31c8c2f487fffa0e13f",
+                                    "606ea31d8c2f487fffa1539b",
+                                    "606ea31e8c2f487fffa19c89",
+                                    "606ea31e8c2f487fffa1b6eb",
+                                    "606ea31f8c2f487fffa22fb2",
+                                    "606ea31f8c2f487fffa234c3",
+                                    "606ea3208c2f487fffa2633f",
+                                    "606ea3218c2f487fffa29a9a",
+                                    "606ea3218c2f487fffa2ab55",
+                                    "606ea3218c2f487fffa2d448",
+                                    "606ea3228c2f487fffa2f139",
+                                    "606ea3238c2f487fffa34ead",
+                                    "606ea3238c2f487fffa393b7",
+                                    "606ea3238c2f487fffa3986a",
+                                    "606ea3248c2f487fffa3bf34",
+                                    "606ea3248c2f487fffa3f681",
+                                    "606ea3258c2f487fffa40bfb",
+                                    "606ea3258c2f487fffa43ead",
+                                    "606ea3258c2f487fffa44101",
+                                    "606ea3268c2f487fffa476b5",
+                                    "606ea3268c2f487fffa49fbd",
+                                    "606ea3278c2f487fffa4d44d",
+                                    "606ea3278c2f487fffa4d976",
+                                    "606ea3278c2f487fffa4eda9",
+                                    "606ea3288c2f487fffa516cc",
+                                    "606ea3288c2f487fffa520cb",
+                                    "606ea3288c2f487fffa525d9",
+                                    "606ea3288c2f487fffa52d2a",
+                                    "606ea3288c2f487fffa55f5b",
+                                    "606ea3298c2f487fffa56693",
+                                    "606ea3298c2f487fffa57020",
+                                    "606ea3298c2f487fffa574c9",
+                                    "606ea3298c2f487fffa58888",
+                                    "606ea3298c2f487fffa58f92",
+                                    "606ea3298c2f487fffa599b1",
+                                    "606ea3298c2f487fffa599b2",
+                                    "606ea3298c2f487fffa5aac2",
+                                    "606ea32a8c2f487fffa5fdd4",
+                                    "606ea32b8c2f487fffa6134b",
+                                    "606ea32b8c2f487fffa623c0",
+                                    "606ea32b8c2f487fffa6386a",
+                                    "606ea32b8c2f487fffa65779",
+                                    "606ea32c8c2f487fffa6c1bf",
+                                    "606ea32d8c2f487fffa6d754",
+                                    "606ea32d8c2f487fffa6de82",
+                                    "606ea32d8c2f487fffa6f93e",
+                                    "606ea32d8c2f487fffa70ca5",
+                                    "606ea32e8c2f487fffa7431d",
+                                    "606ea32e8c2f487fffa76246",
+                                    "606ea32f8c2f487fffa77ea7",
+                                    "606ea32f8c2f487fffa7a291",
+                                    "606ea32f8c2f487fffa7ac42",
+                                    "606ea32f8c2f487fffa7b86f",
+                                    "606ea32f8c2f487fffa7bd6f",
+                                    "606ea32f8c2f487fffa7c53d",
+                                    "606ea32f8c2f487fffa7ca9e",
+                                    "606ea3308c2f487fffa80379",
+                                    "606ea3318c2f487fffa840d8",
+                                    "606ea3328c2f487fffa8afbf",
+                                    "606ea3328c2f487fffa8cc5b",
+                                    "606ea3338c2f487fffa8d0e8",
+                                    "606ea3338c2f487fffa8d622",
+                                    "606ea3338c2f487fffa8ddc0",
+                                    "606ea3338c2f487fffa8e72e",
+                                    "606ea3338c2f487fffa8ee8c",
+                                    "606ea3338c2f487fffa90e64",
+                                    "606ea3338c2f487fffa91a35",
+                                    "606ea3338c2f487fffa923fa",
+                                    "606ea3348c2f487fffa939c5",
+                                    "606ea3358c2f487fffa9a100",
+                                    "606ea3368c2f487fffa9ff3f",
+                                    "606ea3368c2f487fffaa08f7",
+                                    "606ea3378c2f487fffaa4818",
+                                    "606ea3388c2f487fffaa9593",
+                                    "606ea3388c2f487fffaa9efc",
+                                    "606ea3388c2f487fffaad62f",
+                                    "606ea3388c2f487fffaadfee",
+                                    "606ea3398c2f487fffaae760",
+                                    "606ea3398c2f487fffab15ed",
+                                    "606ea33a8c2f487fffab301f",
+                                    "606ea33a8c2f487fffab3928",
+                                    "606ea33a8c2f487fffab77b3",
+                                    "606ea33b8c2f487fffabc258",
+                                    "606ea33c8c2f487fffac05ad",
+                                    "606ea33c8c2f487fffac07ec",
+                                    "606ea33c8c2f487fffac2ff3",
+                                    "606ea33d8c2f487fffac4588",
+                                    "606ea33d8c2f487fffac7103",
+                                    "606ea33e8c2f487fffac8d81",
+                                    "606ea33e8c2f487fffac994e",
+                                    "606ea33e8c2f487fffaccbc4",
+                                    "606ea33f8c2f487fffad015f",
+                                    "606ea3408c2f487fffad4275",
+                                    "606ea3408c2f487fffad695f",
+                                    "606ea3408c2f487fffad6ea5",
+                                    "606ea3418c2f487fffadb0b8",
+                                    "606ea3418c2f487fffadcb6d",
+                                    "606ea3418c2f487fffadd058",
+                                    "606ea3418c2f487fffadd2bd",
+                                    "606ea3418c2f487fffadd9f2",
+                                    "606ea3428c2f487fffadff11",
+                                    "606ea3428c2f487fffae0186",
+                                    "606ea3428c2f487fffae3507",
+                                    "606ea3438c2f487fffae7571",
+                                    "606ea3448c2f487fffaeaa3c",
+                                    "606ea3448c2f487fffaeac8e",
+                                    "606ea3448c2f487fffaedb0c",
+                                    "606ea3448c2f487fffaee6c2",
+                                    "606ea3448c2f487fffaee91a",
+                                    "606ea3458c2f487fffaefc74",
+                                    "606ea3458c2f487fffaf042b",
+                                    "606ea3458c2f487fffaf2592",
+                                    "606ea3458c2f487fffaf2cd6",
+                                    "606ea3468c2f487fffaf561c",
+                                    "606ea3468c2f487fffaf6a29",
+                                    "606ea3468c2f487fffaf791f",
+                                    "606ea3468c2f487fffaf8084",
+                                    "606ea3478c2f487fffafa4f3",
+                                    "606ea3478c2f487fffafb163",
+                                    "606ea3478c2f487fffafb8cf",
+                                    "606ea3478c2f487fffafbdf9",
+                                    "606ea3478c2f487fffafe95a",
+                                    "606ea3488c2f487fffb0195b"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "expand": true,
+                "variantIdQuery": null
+            }
+        },
+        "receivedRequestSummary": {
+            "apiVersion": "v2.1.0-beaconplus",
+            "datasetIds": [
+                "progenetix"
+            ],
+            "includeResultsetResponses": "HIT",
+            "pagination": {
+                "currentPage": null,
+                "limit": 10,
+                "nextPage": null,
+                "previousPage": null,
+                "skip": 0
+            },
+            "requestParameters": {
+                "$schema": null
+            },
+            "requestedGranularity": "record",
+            "requestedSchemas": [
+                {
+                    "entityType": "genomicVariant",
+                    "schema": "https://progenetix.org/services/schemas/genomicVariant/"
+                }
+            ],
+            "testMode": false
+        },
+        "returnedGranularity": "record",
+        "returnedSchemas": [
+            {
+                "entityType": "genomicVariant",
+                "schema": "https://progenetix.org/services/schemas/genomicVariant/"
+            }
+        ],
+        "testMode": false
+    },
+    "response": {
+        "$schema": null,
+        "resultSets": [
+            {
+                "exists": true,
+                "id": "progenetix",
+                "info": {
+                    "counts": {
+                        "biosamples": 198,
+                        "callsets": 198,
+                        "variants": 23
+                    }
+                },
+                "results": [
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG01668",
+                                "biosampleId": "onekgbs-HG01668",
+                                "id": "onekgvar-606ea2fe8c2f487fff9673aa"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA20818",
+                                "biosampleId": "onekgbs-NA20818",
+                                "id": "onekgvar-606ea2ff8c2f487fff96eacd"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01048",
+                                "biosampleId": "onekgbs-HG01048",
+                                "id": "onekgvar-606ea3058c2f487fff98c463"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12767",
+                                "biosampleId": "onekgbs-NA12767",
+                                "id": "onekgvar-606ea30b8c2f487fff9b3215"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA10865",
+                                "biosampleId": "onekgbs-NA10865",
+                                "id": "onekgvar-606ea3118c2f487fff9d1624"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12272",
+                                "biosampleId": "onekgbs-NA12272",
+                                "id": "onekgvar-606ea3168c2f487fff9f1037"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01707",
+                                "biosampleId": "onekgbs-HG01707",
+                                "id": "onekgvar-606ea3178c2f487fff9f68ba"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA11829",
+                                "biosampleId": "onekgbs-NA11829",
+                                "id": "onekgvar-606ea31a8c2f487fffa050db"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01617",
+                                "biosampleId": "onekgbs-HG01617",
+                                "id": "onekgvar-606ea31a8c2f487fffa0691f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01096",
+                                "biosampleId": "onekgbs-HG01096",
+                                "id": "onekgvar-606ea31b8c2f487fffa08ac1"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12249",
+                                "biosampleId": "onekgbs-NA12249",
+                                "id": "onekgvar-606ea3208c2f487fffa2633f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00265",
+                                "biosampleId": "onekgbs-HG00265",
+                                "id": "onekgvar-606ea3238c2f487fffa3986a"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA20814",
+                                "biosampleId": "onekgbs-NA20814",
+                                "id": "onekgvar-606ea32f8c2f487fffa7c53d"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12383",
+                                "biosampleId": "onekgbs-NA12383",
+                                "id": "onekgvar-606ea3348c2f487fffa939c5"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01682",
+                                "biosampleId": "onekgbs-HG01682",
+                                "id": "onekgvar-606ea3388c2f487fffaad62f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00262",
+                                "biosampleId": "onekgbs-HG00262",
+                                "id": "onekgvar-606ea33a8c2f487fffab3928"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01497",
+                                "biosampleId": "onekgbs-HG01497",
+                                "id": "onekgvar-606ea33c8c2f487fffac07ec"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02148",
+                                "biosampleId": "onekgbs-HG02148",
+                                "id": "onekgvar-606ea33f8c2f487fffad015f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01140",
+                                "biosampleId": "onekgbs-HG01140",
+                                "id": "onekgvar-606ea3448c2f487fffaee91a"
+                            }
+                        ],
+                        "variantInternalId": "17:7360660-7363527:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2867,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7363527
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7360660
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02154",
+                                "biosampleId": "onekgbs-HG02154",
+                                "id": "onekgvar-606ea3298c2f487fffa57020"
+                            }
+                        ],
+                        "variantInternalId": "17:7085547-7088295:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2748,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7088295
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7085547
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03806",
+                                "biosampleId": "onekgbs-HG03806",
+                                "id": "onekgvar-606ea3038c2f487fff981697"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12044",
+                                "biosampleId": "onekgbs-NA12044",
+                                "id": "onekgvar-606ea3388c2f487fffaa9593"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03809",
+                                "biosampleId": "onekgbs-HG03809",
+                                "id": "onekgvar-606ea3468c2f487fffaf6a29"
+                            }
+                        ],
+                        "variantInternalId": "17:7430306-7435109:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4803,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7435109
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7430306
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02029",
+                                "biosampleId": "onekgbs-HG02029",
+                                "id": "onekgvar-606ea3078c2f487fff998d37"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00423",
+                                "biosampleId": "onekgbs-HG00423",
+                                "id": "onekgvar-606ea3338c2f487fffa8e72e"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00636",
+                                "biosampleId": "onekgbs-HG00636",
+                                "id": "onekgvar-606ea3378c2f487fffaa4818"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02050",
+                                "biosampleId": "onekgbs-HG02050",
+                                "id": "onekgvar-606ea3458c2f487fffaefc74"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00472",
+                                "biosampleId": "onekgbs-HG00472",
+                                "id": "onekgvar-606ea3468c2f487fffaf791f"
+                            }
+                        ],
+                        "variantInternalId": "17:7336386-7340244:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 3858,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7340244
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7336386
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03772",
+                                "biosampleId": "onekgbs-HG03772",
+                                "id": "onekgvar-606ea2fe8c2f487fff9699fe"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03719",
+                                "biosampleId": "onekgbs-HG03719",
+                                "id": "onekgvar-606ea2ff8c2f487fff96c9cb"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA11881",
+                                "biosampleId": "onekgbs-NA11881",
+                                "id": "onekgvar-606ea3008c2f487fff973345"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA21130",
+                                "biosampleId": "onekgbs-NA21130",
+                                "id": "onekgvar-606ea3008c2f487fff973fca"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03706",
+                                "biosampleId": "onekgbs-HG03706",
+                                "id": "onekgvar-606ea3028c2f487fff97cb7c"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01347",
+                                "biosampleId": "onekgbs-HG01347",
+                                "id": "onekgvar-606ea3058c2f487fff98fec2"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA12872",
+                                "biosampleId": "onekgbs-NA12872",
+                                "id": "onekgvar-606ea3088c2f487fff99f5ae"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG04025",
+                                "biosampleId": "onekgbs-HG04025",
+                                "id": "onekgvar-606ea3088c2f487fff99f815"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03849",
+                                "biosampleId": "onekgbs-HG03849",
+                                "id": "onekgvar-606ea30a8c2f487fff9ad0c4"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02783",
+                                "biosampleId": "onekgbs-HG02783",
+                                "id": "onekgvar-606ea30d8c2f487fff9bb29b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03976",
+                                "biosampleId": "onekgbs-HG03976",
+                                "id": "onekgvar-606ea3198c2f487fffa01200"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00186",
+                                "biosampleId": "onekgbs-HG00186",
+                                "id": "onekgvar-606ea31a8c2f487fffa02761"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03807",
+                                "biosampleId": "onekgbs-HG03807",
+                                "id": "onekgvar-606ea31a8c2f487fffa0491b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG04195",
+                                "biosampleId": "onekgbs-HG04195",
+                                "id": "onekgvar-606ea31f8c2f487fffa22fb2"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00114",
+                                "biosampleId": "onekgbs-HG00114",
+                                "id": "onekgvar-606ea3258c2f487fffa44101"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03757",
+                                "biosampleId": "onekgbs-HG03757",
+                                "id": "onekgvar-606ea3268c2f487fffa476b5"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00099",
+                                "biosampleId": "onekgbs-HG00099",
+                                "id": "onekgvar-606ea32a8c2f487fffa5fdd4"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG04174",
+                                "biosampleId": "onekgbs-HG04174",
+                                "id": "onekgvar-606ea32d8c2f487fffa6de82"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00349",
+                                "biosampleId": "onekgbs-HG00349",
+                                "id": "onekgvar-606ea3328c2f487fffa8afbf"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02726",
+                                "biosampleId": "onekgbs-HG02726",
+                                "id": "onekgvar-606ea3368c2f487fffaa08f7"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA07019",
+                                "biosampleId": "onekgbs-NA07019",
+                                "id": "onekgvar-606ea3388c2f487fffaa9efc"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03640",
+                                "biosampleId": "onekgbs-HG03640",
+                                "id": "onekgvar-606ea33a8c2f487fffab77b3"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03906",
+                                "biosampleId": "onekgbs-HG03906",
+                                "id": "onekgvar-606ea3468c2f487fffaf561c"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA21093",
+                                "biosampleId": "onekgbs-NA21093",
+                                "id": "onekgvar-606ea3468c2f487fffaf8084"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03716",
+                                "biosampleId": "onekgbs-HG03716",
+                                "id": "onekgvar-606ea3488c2f487fffb0195b"
+                            }
+                        ],
+                        "variantInternalId": "17:7432306-7435109:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2803,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7435109
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7432306
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03990",
+                                "biosampleId": "onekgbs-HG03990",
+                                "id": "onekgvar-606ea3258c2f487fffa40bfb"
+                            }
+                        ],
+                        "variantInternalId": "17:7837228-7840229:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 3001,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7840229
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7837228
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02756",
+                                "biosampleId": "onekgbs-HG02756",
+                                "id": "onekgvar-606ea30b8c2f487fff9affc7"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19238",
+                                "biosampleId": "onekgbs-NA19238",
+                                "id": "onekgvar-606ea3168c2f487fff9ee291"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02054",
+                                "biosampleId": "onekgbs-HG02054",
+                                "id": "onekgvar-606ea31b8c2f487fffa0943f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03084",
+                                "biosampleId": "onekgbs-HG03084",
+                                "id": "onekgvar-606ea3338c2f487fffa8d0e8"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19390",
+                                "biosampleId": "onekgbs-NA19390",
+                                "id": "onekgvar-606ea3428c2f487fffadff11"
+                            }
+                        ],
+                        "variantInternalId": "17:7084263-7088295:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4032,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7088295
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7084263
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03802",
+                                "biosampleId": "onekgbs-HG03802",
+                                "id": "onekgvar-606ea3288c2f487fffa52d2a"
+                            }
+                        ],
+                        "variantInternalId": "17:7660458-7663397:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2939,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7663397
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7660458
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03869",
+                                "biosampleId": "onekgbs-HG03869",
+                                "id": "onekgvar-606ea32b8c2f487fffa6134b"
+                            }
+                        ],
+                        "variantInternalId": "17:7359176-7363527:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4351,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7363527
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7359176
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-NA19184",
+                                "biosampleId": "onekgbs-NA19184",
+                                "id": "onekgvar-606ea3308c2f487fffa80379"
+                            }
+                        ],
+                        "variantInternalId": "17:7081689-7087128:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 5439,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7087128
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7081689
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03872",
+                                "biosampleId": "onekgbs-HG03872",
+                                "id": "onekgvar-606ea2fe8c2f487fff9660a7"
+                            }
+                        ],
+                        "variantInternalId": "17:7135761-7140509:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4748,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7140509
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7135761
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG01056",
+                                "biosampleId": "onekgbs-HG01056",
+                                "id": "onekgvar-606ea3158c2f487fff9eb74a"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18579",
+                                "biosampleId": "onekgbs-NA18579",
+                                "id": "onekgvar-606ea3298c2f487fffa58f92"
+                            }
+                        ],
+                        "variantInternalId": "17:7837228-7839229:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2001,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7839229
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7837228
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-NA18862",
+                                "biosampleId": "onekgbs-NA18862",
+                                "id": "onekgvar-606ea2ff8c2f487fff96c032"
+                            }
+                        ],
+                        "variantInternalId": "17:7082984-7087128:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4144,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7087128
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7082984
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03572",
+                                "biosampleId": "onekgbs-HG03572",
+                                "id": "onekgvar-606ea2fd8c2f487fff964b00"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02477",
+                                "biosampleId": "onekgbs-HG02477",
+                                "id": "onekgvar-606ea2ff8c2f487fff96b937"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19703",
+                                "biosampleId": "onekgbs-NA19703",
+                                "id": "onekgvar-606ea2ff8c2f487fff96e5aa"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02572",
+                                "biosampleId": "onekgbs-HG02572",
+                                "id": "onekgvar-606ea2ff8c2f487fff96f6c5"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03124",
+                                "biosampleId": "onekgbs-HG03124",
+                                "id": "onekgvar-606ea3008c2f487fff972bac"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03082",
+                                "biosampleId": "onekgbs-HG03082",
+                                "id": "onekgvar-606ea3038c2f487fff982cce"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03385",
+                                "biosampleId": "onekgbs-HG03385",
+                                "id": "onekgvar-606ea3048c2f487fff987717"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00614",
+                                "biosampleId": "onekgbs-HG00614",
+                                "id": "onekgvar-606ea3048c2f487fff98a767"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19247",
+                                "biosampleId": "onekgbs-NA19247",
+                                "id": "onekgvar-606ea3048c2f487fff98a9b3"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02280",
+                                "biosampleId": "onekgbs-HG02280",
+                                "id": "onekgvar-606ea3058c2f487fff98d31a"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02704",
+                                "biosampleId": "onekgbs-HG02704",
+                                "id": "onekgvar-606ea3058c2f487fff98db20"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03029",
+                                "biosampleId": "onekgbs-HG03029",
+                                "id": "onekgvar-606ea3068c2f487fff9927d9"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19239",
+                                "biosampleId": "onekgbs-NA19239",
+                                "id": "onekgvar-606ea3068c2f487fff995b19"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01632",
+                                "biosampleId": "onekgbs-HG01632",
+                                "id": "onekgvar-606ea3088c2f487fff9a1c49"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02010",
+                                "biosampleId": "onekgbs-HG02010",
+                                "id": "onekgvar-606ea3098c2f487fff9a77a5"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01959",
+                                "biosampleId": "onekgbs-HG01959",
+                                "id": "onekgvar-606ea30a8c2f487fff9a9bb6"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00101",
+                                "biosampleId": "onekgbs-HG00101",
+                                "id": "onekgvar-606ea30a8c2f487fff9ab418"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19922",
+                                "biosampleId": "onekgbs-NA19922",
+                                "id": "onekgvar-606ea30b8c2f487fff9add34"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19428",
+                                "biosampleId": "onekgbs-NA19428",
+                                "id": "onekgvar-606ea30b8c2f487fff9ae256"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18643",
+                                "biosampleId": "onekgbs-NA18643",
+                                "id": "onekgvar-606ea30b8c2f487fff9af135"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03438",
+                                "biosampleId": "onekgbs-HG03438",
+                                "id": "onekgvar-606ea30b8c2f487fff9af8b1"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19310",
+                                "biosampleId": "onekgbs-NA19310",
+                                "id": "onekgvar-606ea30b8c2f487fff9b0e35"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02451",
+                                "biosampleId": "onekgbs-HG02451",
+                                "id": "onekgvar-606ea30e8c2f487fff9c3689"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19017",
+                                "biosampleId": "onekgbs-NA19017",
+                                "id": "onekgvar-606ea30f8c2f487fff9c9ecf"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03279",
+                                "biosampleId": "onekgbs-HG03279",
+                                "id": "onekgvar-606ea3108c2f487fff9ceafc"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02012",
+                                "biosampleId": "onekgbs-HG02012",
+                                "id": "onekgvar-606ea3108c2f487fff9cfce7"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18489",
+                                "biosampleId": "onekgbs-NA18489",
+                                "id": "onekgvar-606ea3118c2f487fff9d0013"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03499",
+                                "biosampleId": "onekgbs-HG03499",
+                                "id": "onekgvar-606ea3128c2f487fff9d87f8"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18874",
+                                "biosampleId": "onekgbs-NA18874",
+                                "id": "onekgvar-606ea3148c2f487fff9e2eb8"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19030",
+                                "biosampleId": "onekgbs-NA19030",
+                                "id": "onekgvar-606ea3178c2f487fff9f6665"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18863",
+                                "biosampleId": "onekgbs-NA18863",
+                                "id": "onekgvar-606ea3188c2f487fff9fa09b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03344",
+                                "biosampleId": "onekgbs-HG03344",
+                                "id": "onekgvar-606ea3198c2f487fff9fd83e"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19154",
+                                "biosampleId": "onekgbs-NA19154",
+                                "id": "onekgvar-606ea3198c2f487fffa00aec"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03476",
+                                "biosampleId": "onekgbs-HG03476",
+                                "id": "onekgvar-606ea3198c2f487fffa0203c"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03035",
+                                "biosampleId": "onekgbs-HG03035",
+                                "id": "onekgvar-606ea31a8c2f487fffa04e5a"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19093",
+                                "biosampleId": "onekgbs-NA19093",
+                                "id": "onekgvar-606ea31a8c2f487fffa05f7f"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19320",
+                                "biosampleId": "onekgbs-NA19320",
+                                "id": "onekgvar-606ea31a8c2f487fffa07c5f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01879",
+                                "biosampleId": "onekgbs-HG01879",
+                                "id": "onekgvar-606ea31b8c2f487fffa0a9bc"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18517",
+                                "biosampleId": "onekgbs-NA18517",
+                                "id": "onekgvar-606ea31b8c2f487fffa0ac33"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18912",
+                                "biosampleId": "onekgbs-NA18912",
+                                "id": "onekgvar-606ea31b8c2f487fffa0c660"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03054",
+                                "biosampleId": "onekgbs-HG03054",
+                                "id": "onekgvar-606ea31c8c2f487fffa0e13f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03309",
+                                "biosampleId": "onekgbs-HG03309",
+                                "id": "onekgvar-606ea31e8c2f487fffa19c89"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02582",
+                                "biosampleId": "onekgbs-HG02582",
+                                "id": "onekgvar-606ea31e8c2f487fffa1b6eb"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02645",
+                                "biosampleId": "onekgbs-HG02645",
+                                "id": "onekgvar-606ea31f8c2f487fffa234c3"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01987",
+                                "biosampleId": "onekgbs-HG01987",
+                                "id": "onekgvar-606ea3218c2f487fffa29a9a"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02897",
+                                "biosampleId": "onekgbs-HG02897",
+                                "id": "onekgvar-606ea3218c2f487fffa2ab55"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18934",
+                                "biosampleId": "onekgbs-NA18934",
+                                "id": "onekgvar-606ea3218c2f487fffa2d448"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03445",
+                                "biosampleId": "onekgbs-HG03445",
+                                "id": "onekgvar-606ea3228c2f487fffa2f139"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG00101",
+                                "biosampleId": "onekgbs-HG00101",
+                                "id": "onekgvar-606ea3238c2f487fffa34ead"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02011",
+                                "biosampleId": "onekgbs-HG02011",
+                                "id": "onekgvar-606ea3238c2f487fffa393b7"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01985",
+                                "biosampleId": "onekgbs-HG01985",
+                                "id": "onekgvar-606ea3248c2f487fffa3bf34"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01633",
+                                "biosampleId": "onekgbs-HG01633",
+                                "id": "onekgvar-606ea3248c2f487fffa3f681"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18623",
+                                "biosampleId": "onekgbs-NA18623",
+                                "id": "onekgvar-606ea3258c2f487fffa43ead"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01895",
+                                "biosampleId": "onekgbs-HG01895",
+                                "id": "onekgvar-606ea3278c2f487fffa4d44d"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02557",
+                                "biosampleId": "onekgbs-HG02557",
+                                "id": "onekgvar-606ea3278c2f487fffa4d976"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02757",
+                                "biosampleId": "onekgbs-HG02757",
+                                "id": "onekgvar-606ea3278c2f487fffa4eda9"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03086",
+                                "biosampleId": "onekgbs-HG03086",
+                                "id": "onekgvar-606ea3288c2f487fffa516cc"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03135",
+                                "biosampleId": "onekgbs-HG03135",
+                                "id": "onekgvar-606ea3288c2f487fffa520cb"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19199",
+                                "biosampleId": "onekgbs-NA19199",
+                                "id": "onekgvar-606ea3288c2f487fffa525d9"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02569",
+                                "biosampleId": "onekgbs-HG02569",
+                                "id": "onekgvar-606ea3288c2f487fffa55f5b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01912",
+                                "biosampleId": "onekgbs-HG01912",
+                                "id": "onekgvar-606ea3298c2f487fffa56693"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02869",
+                                "biosampleId": "onekgbs-HG02869",
+                                "id": "onekgvar-606ea3298c2f487fffa574c9"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18879",
+                                "biosampleId": "onekgbs-NA18879",
+                                "id": "onekgvar-606ea3298c2f487fffa5aac2"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02679",
+                                "biosampleId": "onekgbs-HG02679",
+                                "id": "onekgvar-606ea32b8c2f487fffa623c0"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03517",
+                                "biosampleId": "onekgbs-HG03517",
+                                "id": "onekgvar-606ea32b8c2f487fffa6386a"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19130",
+                                "biosampleId": "onekgbs-NA19130",
+                                "id": "onekgvar-606ea32b8c2f487fffa65779"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19351",
+                                "biosampleId": "onekgbs-NA19351",
+                                "id": "onekgvar-606ea32d8c2f487fffa6d754"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03479",
+                                "biosampleId": "onekgbs-HG03479",
+                                "id": "onekgvar-606ea32d8c2f487fffa6f93e"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02612",
+                                "biosampleId": "onekgbs-HG02612",
+                                "id": "onekgvar-606ea32d8c2f487fffa70ca5"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02322",
+                                "biosampleId": "onekgbs-HG02322",
+                                "id": "onekgvar-606ea32e8c2f487fffa7431d"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18505",
+                                "biosampleId": "onekgbs-NA18505",
+                                "id": "onekgvar-606ea32f8c2f487fffa77ea7"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18564",
+                                "biosampleId": "onekgbs-NA18564",
+                                "id": "onekgvar-606ea32f8c2f487fffa7a291"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19384",
+                                "biosampleId": "onekgbs-NA19384",
+                                "id": "onekgvar-606ea32f8c2f487fffa7ac42"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18864",
+                                "biosampleId": "onekgbs-NA18864",
+                                "id": "onekgvar-606ea32f8c2f487fffa7b86f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02471",
+                                "biosampleId": "onekgbs-HG02471",
+                                "id": "onekgvar-606ea32f8c2f487fffa7bd6f"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18961",
+                                "biosampleId": "onekgbs-NA18961",
+                                "id": "onekgvar-606ea32f8c2f487fffa7ca9e"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03137",
+                                "biosampleId": "onekgbs-HG03137",
+                                "id": "onekgvar-606ea3338c2f487fffa8d622"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19191",
+                                "biosampleId": "onekgbs-NA19191",
+                                "id": "onekgvar-606ea3338c2f487fffa8ddc0"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03558",
+                                "biosampleId": "onekgbs-HG03558",
+                                "id": "onekgvar-606ea3338c2f487fffa8ee8c"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02680",
+                                "biosampleId": "onekgbs-HG02680",
+                                "id": "onekgvar-606ea3338c2f487fffa90e64"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19175",
+                                "biosampleId": "onekgbs-NA19175",
+                                "id": "onekgvar-606ea3338c2f487fffa91a35"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03436",
+                                "biosampleId": "onekgbs-HG03436",
+                                "id": "onekgvar-606ea3358c2f487fffa9a100"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19160",
+                                "biosampleId": "onekgbs-NA19160",
+                                "id": "onekgvar-606ea3368c2f487fffa9ff3f"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19431",
+                                "biosampleId": "onekgbs-NA19431",
+                                "id": "onekgvar-606ea3388c2f487fffaadfee"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19103",
+                                "biosampleId": "onekgbs-NA19103",
+                                "id": "onekgvar-606ea3398c2f487fffaae760"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18855",
+                                "biosampleId": "onekgbs-NA18855",
+                                "id": "onekgvar-606ea3398c2f487fffab15ed"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19206",
+                                "biosampleId": "onekgbs-NA19206",
+                                "id": "onekgvar-606ea33a8c2f487fffab301f"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19924",
+                                "biosampleId": "onekgbs-NA19924",
+                                "id": "onekgvar-606ea33b8c2f487fffabc258"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA20530",
+                                "biosampleId": "onekgbs-NA20530",
+                                "id": "onekgvar-606ea33c8c2f487fffac05ad"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19177",
+                                "biosampleId": "onekgbs-NA19177",
+                                "id": "onekgvar-606ea33e8c2f487fffac8d81"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19445",
+                                "biosampleId": "onekgbs-NA19445",
+                                "id": "onekgvar-606ea33e8c2f487fffac994e"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03514",
+                                "biosampleId": "onekgbs-HG03514",
+                                "id": "onekgvar-606ea33e8c2f487fffaccbc4"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03342",
+                                "biosampleId": "onekgbs-HG03342",
+                                "id": "onekgvar-606ea3408c2f487fffad4275"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03047",
+                                "biosampleId": "onekgbs-HG03047",
+                                "id": "onekgvar-606ea3408c2f487fffad695f"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02323",
+                                "biosampleId": "onekgbs-HG02323",
+                                "id": "onekgvar-606ea3408c2f487fffad6ea5"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19190",
+                                "biosampleId": "onekgbs-NA19190",
+                                "id": "onekgvar-606ea3418c2f487fffadb0b8"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02760",
+                                "biosampleId": "onekgbs-HG02760",
+                                "id": "onekgvar-606ea3418c2f487fffadcb6d"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02860",
+                                "biosampleId": "onekgbs-HG02860",
+                                "id": "onekgvar-606ea3418c2f487fffadd2bd"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19711",
+                                "biosampleId": "onekgbs-NA19711",
+                                "id": "onekgvar-606ea3418c2f487fffadd9f2"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02058",
+                                "biosampleId": "onekgbs-HG02058",
+                                "id": "onekgvar-606ea3428c2f487fffae0186"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18914",
+                                "biosampleId": "onekgbs-NA18914",
+                                "id": "onekgvar-606ea3428c2f487fffae3507"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19042",
+                                "biosampleId": "onekgbs-NA19042",
+                                "id": "onekgvar-606ea3438c2f487fffae7571"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02334",
+                                "biosampleId": "onekgbs-HG02334",
+                                "id": "onekgvar-606ea3448c2f487fffaeaa3c"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19240",
+                                "biosampleId": "onekgbs-NA19240",
+                                "id": "onekgvar-606ea3448c2f487fffaee6c2"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18878",
+                                "biosampleId": "onekgbs-NA18878",
+                                "id": "onekgvar-606ea3458c2f487fffaf042b"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19324",
+                                "biosampleId": "onekgbs-NA19324",
+                                "id": "onekgvar-606ea3458c2f487fffaf2592"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19713",
+                                "biosampleId": "onekgbs-NA19713",
+                                "id": "onekgvar-606ea3458c2f487fffaf2cd6"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02613",
+                                "biosampleId": "onekgbs-HG02613",
+                                "id": "onekgvar-606ea3478c2f487fffafa4f3"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03472",
+                                "biosampleId": "onekgbs-HG03472",
+                                "id": "onekgvar-606ea3478c2f487fffafb163"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03478",
+                                "biosampleId": "onekgbs-HG03478",
+                                "id": "onekgvar-606ea3478c2f487fffafbdf9"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02419",
+                                "biosampleId": "onekgbs-HG02419",
+                                "id": "onekgvar-606ea3478c2f487fffafe95a"
+                            }
+                        ],
+                        "variantInternalId": "17:7084263-7087128:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2865,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7087128
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7084263
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-NA18606",
+                                "biosampleId": "onekgbs-NA18606",
+                                "id": "onekgvar-606ea2fe8c2f487fff966c96"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02120",
+                                "biosampleId": "onekgbs-HG02120",
+                                "id": "onekgvar-606ea32c8c2f487fffa6c1bf"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02122",
+                                "biosampleId": "onekgbs-HG02122",
+                                "id": "onekgvar-606ea32e8c2f487fffa76246"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18597",
+                                "biosampleId": "onekgbs-NA18597",
+                                "id": "onekgvar-606ea33d8c2f487fffac7103"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18609",
+                                "biosampleId": "onekgbs-NA18609",
+                                "id": "onekgvar-606ea3478c2f487fffafb8cf"
+                            }
+                        ],
+                        "variantInternalId": "17:7337386-7340244:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030069",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 0,
+                                "cnvValue": -2,
+                                "varLength": 2858,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7340244
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7337386
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02966",
+                                "biosampleId": "onekgbs-HG02966",
+                                "id": "onekgvar-606ea3298c2f487fffa599b2"
+                            }
+                        ],
+                        "variantInternalId": "17:7827234-7828480:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030069",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 0,
+                                "cnvValue": -2,
+                                "varLength": 1246,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7828480
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7827234
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG03684",
+                                "biosampleId": "onekgbs-HG03684",
+                                "id": "onekgvar-606ea30b8c2f487fff9b1f3a"
+                            }
+                        ],
+                        "variantInternalId": "17:7525118-7528093:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2975,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7528093
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7525118
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02668",
+                                "biosampleId": "onekgbs-HG02668",
+                                "id": "onekgvar-606ea3038c2f487fff98140c"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02856",
+                                "biosampleId": "onekgbs-HG02856",
+                                "id": "onekgvar-606ea30b8c2f487fff9b070a"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03079",
+                                "biosampleId": "onekgbs-HG03079",
+                                "id": "onekgvar-606ea3108c2f487fff9cc040"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19113",
+                                "biosampleId": "onekgbs-NA19113",
+                                "id": "onekgvar-606ea31d8c2f487fffa1539b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG01990",
+                                "biosampleId": "onekgbs-HG01990",
+                                "id": "onekgvar-606ea3268c2f487fffa49fbd"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA19399",
+                                "biosampleId": "onekgbs-NA19399",
+                                "id": "onekgvar-606ea3298c2f487fffa58888"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02761",
+                                "biosampleId": "onekgbs-HG02761",
+                                "id": "onekgvar-606ea3328c2f487fffa8cc5b"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02839",
+                                "biosampleId": "onekgbs-HG02839",
+                                "id": "onekgvar-606ea3338c2f487fffa923fa"
+                            },
+                            {
+                                "analysisId": "onekgcs-NA18498",
+                                "biosampleId": "onekgbs-NA18498",
+                                "id": "onekgvar-606ea33d8c2f487fffac4588"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG03033",
+                                "biosampleId": "onekgbs-HG03033",
+                                "id": "onekgvar-606ea3418c2f487fffadd058"
+                            },
+                            {
+                                "analysisId": "onekgcs-HG02703",
+                                "biosampleId": "onekgbs-HG02703",
+                                "id": "onekgvar-606ea3448c2f487fffaeac8e"
+                            }
+                        ],
+                        "variantInternalId": "17:7085547-7087128:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 1581,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7087128
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7085547
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02406",
+                                "biosampleId": "onekgbs-HG02406",
+                                "id": "onekgvar-606ea3448c2f487fffaedb0c"
+                            }
+                        ],
+                        "variantInternalId": "17:7093405-7099362:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 5957,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7099362
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7093405
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG01671",
+                                "biosampleId": "onekgbs-HG01671",
+                                "id": "onekgvar-606ea3318c2f487fffa840d8"
+                            }
+                        ],
+                        "variantInternalId": "17:7614265-7617039:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2774,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7617039
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7614265
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-NA19118",
+                                "biosampleId": "onekgbs-NA19118",
+                                "id": "onekgvar-606ea30f8c2f487fff9c7bfb"
+                            }
+                        ],
+                        "variantInternalId": "17:7825881-7830037:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 4156,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7830037
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7825881
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02009",
+                                "biosampleId": "onekgbs-HG02009",
+                                "id": "onekgvar-606ea33c8c2f487fffac2ff3"
+                            }
+                        ],
+                        "variantInternalId": "17:7825881-7828480:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 2599,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7828480
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7825881
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    },
+                    {
+                        "caseLevelData": [
+                            {
+                                "analysisId": "onekgcs-HG02966",
+                                "biosampleId": "onekgbs-HG02966",
+                                "id": "onekgvar-606ea3298c2f487fffa599b1"
+                            }
+                        ],
+                        "variantInternalId": "17:7825881-7827235:DEL",
+                        "variation": {
+                            "copyChange": "efo:0030068",
+                            "identifiers": {},
+                            "info": {
+                                "cnCount": 1,
+                                "cnvValue": -1,
+                                "varLength": 1354,
+                                "version": "v23"
+                            },
+                            "molecularAttributes": {},
+                            "required": null,
+                            "subject": {
+                                "interval": {
+                                    "end": {
+                                        "type": "Number",
+                                        "value": 7827235
+                                    },
+                                    "start": {
+                                        "type": "Number",
+                                        "value": 7825881
+                                    },
+                                    "type": "SequenceInterval"
+                                },
+                                "sequence_id": "refseq:NC_000017.11",
+                                "type": "SequenceLocation"
+                            },
+                            "variantAlternativeIds": [],
+                            "variantLevelData": {}
+                        }
+                    }
+                ],
+                "resultsCount": 23,
+                "resultsHandovers": [],
+                "setType": "dataset"
+            }
+        ]
+    },
+    "responseSummary": {
+        "exists": true,
+        "numTotalResults": 23
+    }
+}
+
+
