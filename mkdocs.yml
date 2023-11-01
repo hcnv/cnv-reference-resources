@@ -12,6 +12,7 @@ nav:
   - Input Data: data-resources.md
   - Parameters &amp; Mappings: parameters-and-mappings.md
   - Beacon Queries: beacon-queries.md
+  - MongoDB &amp; Pymongo: mongodb-pymongo.md
   - hCNV Home: /
   - Biohack 2023 Page: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/1
   - Beacon Documentation: 'https://docs.genomebeacons.org'
