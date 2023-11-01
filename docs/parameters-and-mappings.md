@@ -2,9 +2,40 @@
 
 ## Collected Parameters
 
-==TBD==
+### Variants data
+
+* CNV type (DUP, DEL...)
+    - translated to EFO terms using CN count values
+* referenceName
+    - chromosome translated to refseq id w/ prefix
+* start
+    - left-shifted since 0-based coordinates instead of VCFs 1-based
+* end
+    - from INFO
+* CN count
+    - from call field
+* assemblyId
+    - from header (GRCh38)
+
+### Metadata
+
+* sample id
+* donor id? different?
+* sequencing platform
+* sequencing library / model (?)
+* sex
+* ethnicity ...
+* geographic provenance
+* external references, e.g. biosamples collection ID (as CURIE) and associated
+  publication(s)
 
 ## Parameter Output Mappings
+
+!!! Warning "Output Model"
+    The information below just gives some indications about the way these are handled
+    in the Beacon default model and its Progenetix variant. However, the current idea
+    is to go directly for a representation through Phenopackets (which has many similarities
+    to Beacon v2 but a different unified wrapper model).
 
 ### Beacon v2 Default Model for `genomicVariation`
 
