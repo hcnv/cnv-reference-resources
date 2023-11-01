@@ -39,7 +39,10 @@
     is to go directly for a representation through Phenopackets (which has many similarities
     to Beacon v2 but a different unified wrapper model).
 
-**For comparison please see the [Phenopacket example](https://github.com/hcnv/cnv-reference-resources/blob/main/data/progenetix-test-files/phenopacket-example.json) from Progenetix.**
+**For comparison please see the [Phenopacket example](https://github.com/hcnv/cnv-reference-resources/blob/main/data/progenetix-test-files/phenopacket-example.json) from Progenetix.** The same can be accessed through Progenetix
+using <https://progenetix.org/beacon/phenopackets/onekgind-HG00320>.
+Please be aware that this example doesn't contain some of the "interesting" parameters
+like technical provenance or population background.
 
 ### Beacon v2 Default Model for `genomicVariation`
 
