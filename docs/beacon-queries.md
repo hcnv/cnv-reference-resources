@@ -16,23 +16,10 @@
 ```json
 "g_variant": {
     "assemblyId": "GRCh38",
-    "end": [
-        21967753,
-        22500000
-    ],
+    "end": [21967753, 22500000],
     "referenceName": "refseq:NC_000009.12",
-    "start": [
-        21500000,
-        21975098
-    ],
-    "variantType": {
-        "$in": [
-            "EFO:0030067",
-            "EFO:0030068",
-            "EFO:0020073",
-            "EFO:0030069"
-        ]
-    }
+    "start": [21500000, 21975098],
+    "variantType": "EFO:0030067"
 }
 ```
 
@@ -41,31 +28,12 @@
 ```json
 "query": {
     "$and": [
-        {
-            "location.sequence_id": "refseq:NC_000009.12"
-        },
-        {
-            "location.start": {
-                "$lt": 21975098
-            }
-        },
-        {
-            "location.end": {
-                "$gte": 21967753
-            }
-        },
-        {
-            "location.start": {
-                "$gte": 21500000
-            }
-        },
-        {
-            "location.end": {
-                "$lt": 22500000
-            }
-        },
-        {
-            "variantState.id": {
+        {"location.sequence_id": "refseq:NC_000009.12"},
+        {"location.start": {"$gte": 21500000}},
+        {"location.start": {"$lt": 21975098}},
+        {"location.end": {"$gte": 21967753}},
+        {"location.end": {"$lt": 22500000}},
+        {"variantState.id": {
                 "$in": [
                     "EFO:0030067",
                     "EFO:0030068",
