@@ -1,0 +1,84 @@
+{
+  "id": "onekgind-HG00320",
+  "subject": {
+    "id": "onekgind-HG00320",
+    "diseases": [],
+    "sex": {
+      "id": "PATO:0020002",
+      "label": "female genotypic sex"
+    }
+  },
+  "biosamples": [
+    {
+      "id": "onekgbs-HG00320",
+      "biosampleStatus": {
+        "id": "EFO:0009654",
+        "label": "reference sample"
+      },
+      "sampleOriginDetail": {
+        "id": "UBERON:0000178",
+        "label": "blood"
+      },
+      "externalReferences": [
+        {
+          "id": "biosample:SAME123797",
+          "label": "1000 genomes sample from EUR population"
+        },
+        {
+          "id": "PMID:20981092",
+          "label": "1000 Genomes Project Consortium (2010): A map of human genome variation from population-scale sequencing."
+        }
+      ],
+      "notes": "1000 genomes sample",
+      "updated": "2022-05-13 09:13:08.050000"
+    }
+  ],
+  "files": [
+    {
+      "fileAttributes": {
+        "fileFormat": "VCF",
+        "genomeAssembly": "GRCh38"
+      },
+      "uri": "https://progenetix.org/services/vcfvariants/onekgbs-HG00320"
+    }
+  ],
+  "metaData": {
+    "phenopacketSchemaVersion": "v2",
+    "resources": [
+      {
+        "id": "NCIT",
+        "iriPrefix": "http://purl.obolibrary.org/obo/NCIT_",
+        "name": "NCIt Plus Neoplasm Core",
+        "namespacePrefix": "NCIT",
+        "url": "http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl",
+        "version": "2022-04-01"
+      },
+      {
+        "id": "PATOsex",
+        "iriPrefix": "http://purl.obolibrary.org/obo/PATO_",
+        "name": "Phenotypic Qualities Ontology",
+        "namespacePrefix": "PATO",
+        "url": "https://github.com/pato-ontology/pato/",
+        "version": "2022-04-01"
+      },
+      {
+        "id": "EFOfus",
+        "iriPrefix": "http://purl.obolibrary.org/obo/EFO_",
+        "name": "Experimental Factor Ontology",
+        "namespacePrefix": "EFO",
+        "url": "http://www.ebi.ac.uk/efo/EFO_0030038",
+        "version": "2022-04-01"
+      },
+      {
+        "id": "UBERON",
+        "iriPrefix": "http://purl.obolibrary.org/obo/UBERON_",
+        "name": "Uberon cross-species anatomical structures ontology",
+        "namespacePrefix": "UBERON",
+        "url": "http://uberon.org",
+        "version": "2022-04-01"
+      }
+    ],
+    "submittedBy": "@mbaudis",
+    "updated": "2022-05-13 09:13:08.050000"
+  }
+}
