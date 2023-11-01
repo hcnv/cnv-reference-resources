@@ -1,13 +1,12 @@
 # Beacon CNV Queries
 
-! hint "Beacon Project Query Documentation"
+!!! Note "Beacon Project Query Documentation"
 
     The Beacon [project's documentation](http://docs.genomebeacons.org/variant-queries/#beacon-range-queries) includes examples for current queries enabling
     discovery of CNVs (in resources supporting these formats).
 
 
 ## Bracket queries
-
 
 ### Beacon parameters
 
@@ -28,7 +27,9 @@
 
 === "Beacon v2 GET"
 
-    `?assemblyId=GRCh38&referenceName=refseq:NC_000009.12&start=21500000,21975098&end=21967753,22500000&variantType=EFO:0030067`
+    ```
+    ?assemblyId=GRCh38&referenceName=refseq:NC_000009.12&start=21500000,21975098&end=21967753,22500000&variantType=EFO:0030067
+    ```
 
 
 ### MongoDB translation
