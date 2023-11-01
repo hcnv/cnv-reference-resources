@@ -39,7 +39,7 @@ Also, this example shows the expansion of the basic "deletion" code (EFO:0030067
 into all its child terms.
 
 ```json
-"query": {
+{
     "$and": [
         {"location.sequence_id": "refseq:NC_000009.12"},
         {"location.start": {"$gte": 21500000}},
