@@ -16,6 +16,7 @@
     - from call field
 * assemblyId
     - from header (GRCh38)
+* ...
 
 ### Metadata
 
@@ -28,6 +29,7 @@
 * geographic provenance
 * external references, e.g. biosamples collection ID (as CURIE) and associated
   publication(s)
+* ...
 
 ## Parameter Output Mappings
 
@@ -36,6 +38,8 @@
     in the Beacon default model and its Progenetix variant. However, the current idea
     is to go directly for a representation through Phenopackets (which has many similarities
     to Beacon v2 but a different unified wrapper model).
+
+**For comparison please see the [Phenopacket example](https://github.com/hcnv/cnv-reference-resources/blob/main/data/progenetix-test-files/phenopacket-example.json) from Progenetix.**
 
 ### Beacon v2 Default Model for `genomicVariation`
 
