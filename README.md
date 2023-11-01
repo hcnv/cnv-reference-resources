@@ -7,4 +7,4 @@ at the [Biohackathon Europe 2023](https://biohackathon-europe.org):
 
 **[A "batteries-included" open reference resource for human genomic copy number variants (CNV)](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/1)**
 
-This sitecan be found at [cnvar.org/cnv-reference-resources/](https://cnvar.org/cnv-reference-resources/).
+This site can be found at [cnvar.org/cnv-reference-resources/](https://cnvar.org/cnv-reference-resources/).
