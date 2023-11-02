@@ -6,9 +6,11 @@
 
 Create a new Directory in your repository with a db folder in it. *Directory/db*
 
-Create a YAML file named as *docker-compose.yaml* and copy this code to it.
+Create a YAML file named *docker-compose.yaml* and copy this script to it.
 
-```version: '3.6'
+
+```
+version: '3.6'
 services:
 
   mongodb:
@@ -21,21 +23,16 @@ services:
 ``` 
 
 
-Run the command 
+Run the commandes below to create a docker container.
 
-```docker-compuse up -d
-```
-
-
-This will create a docker container to check run the *docker ps* command
-
-
-Run the command to install the mongo image
 
 ```
+docker-compose up -d
 docker run -d -p 27016:27017 --name mongo-client mongo:3.6
 docker exec -it mongo-client bash
 ```
+
+To get more information about the created container for example NAMES and PORTS run the *docker ps* command
 
 
 
