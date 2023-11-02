@@ -49,7 +49,7 @@ markdown_extensions:
   - tables
   - mdx_gh_links:
       user: hCNV
-      repo: hcnv.github.io
+      repo: cnv-reference-resources
   - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -62,5 +62,6 @@ theme:
 plugins:
     - search
     - macros
+    - mermaid2
 extra_css:
   - css/theme_overrides.css
