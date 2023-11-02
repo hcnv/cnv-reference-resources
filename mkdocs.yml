@@ -14,6 +14,8 @@ nav:
   - Beacon Queries: beacon-queries.md
   - MongoDB &amp; Pymongo: mongodb-pymongo.md
   - hCNV Home: https://cnvar.org
+  - VCF Data MongoDB: vcfdata-mongodb.md 
+
   - Biohack 2023 Page: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/1
   - Beacon Documentation: 'https://docs.genomebeacons.org'
 
