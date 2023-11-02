@@ -23,7 +23,7 @@ services:
 ``` 
 
 
-Run the commandes below to create a docker container.
+Run the commands below to create a docker container.
 
 
 ```
