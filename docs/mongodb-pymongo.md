@@ -1,5 +1,44 @@
 # MongoDB and Pymongo Cheats
 
+
+## Set up a MondoDB
+
+
+Create a new Directory in your repository with a db folder in it. *Directory/db*
+
+Create a YAML file named as *docker-compose.yaml* and copy this code to it.
+
+```version: '3.6'
+services:
+
+  mongodb:
+    image: mongo:3.6
+    restart: unless-stopped
+    volumes:
+      - ./<Directory/db>:/data/db
+    ports:
+      - "27027:27017"
+``` 
+
+
+Run the command 
+
+```docker-compuse up -d
+```
+
+
+This will create a docker container to check run the *docker ps* command
+
+
+Run the command to install the mongo image
+
+```
+docker run -d -p 27016:27017 --name mongo-client mongo:3.6
+docker exec -it mongo-client bash
+```
+
+
+
 ## Database Manipulation in Python
 
 The following code creates a databas with a variants collection.
@@ -8,7 +47,7 @@ The following code creates a databas with a variants collection.
 from pymongo import MongoClient
 from datetime import datetime
 
-db_client = MongoClient()
+db_client = MongoClient() # if you work on a vertual machine you might need to change this into db_client = MongoClient("<docker ps IP>",27017)
 database = db_client["cnv_reference_db"]
 var_coll = database["variants"]
 
