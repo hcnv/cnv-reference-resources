@@ -1,0 +1,15 @@
+{
+    // Set the default language for new files to Markdown
+    "files.defaultLanguage": "markdown",
+
+    // Configure the MarkdownLint extension
+    "markdownlint.config": {
+        "MD013": false, // line length
+        // Add other rules you want to configure or disable
+    },
+
+    // Configure Markdown Preview Enhanced
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    // Other configurations for Markdown Preview Enhanced
+}
+
