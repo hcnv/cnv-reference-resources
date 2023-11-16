@@ -9,7 +9,7 @@ def common_arguments(parser):
     connection_group.add_argument("-P", "--db-port", type=int, default=27017, dest="database_port", help="port of the beacon database")
     
     advance_connection_group = parser.add_argument_group("Addvanced Connection to MongoDB")
-    advance_connection_group.add_argument("-A", "--db-auth-source", type=str, metavar="ADMIN", default="admin", dest="database_auth_source", help="auth source for the beacon database")
+    advance_connection_group.add_argument("-A", "--db-auth-source", type=str, metavar="ADMIN", default="", dest="database_auth_source", help="auth source for the beacon database")
     advance_connection_group.add_argument("-U", "--db-user", type=str, default="", dest="database_user", help="login user for the beacon database")
     advance_connection_group.add_argument("-W", "--db-password", type=str, default="", dest="database_password", help="login password for the beacon database")
     advance_connection_group.add_argument("-N", "--db-name", type=str, default="", dest="database_name", help="name of the beacon database")
@@ -130,12 +130,13 @@ def beacon_query():
     
     # query sequence_queries
     if args.command == "sequence":
-        advanced_required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start','alternateBases','referenceBases']
-        for arg in advanced_required_args:
-            if not getattr(args, arg):
-                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-                parser_sequence.print_help()
-                sys.exit(1)
+        required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start','alternateBases','referenceBases']
+        if any(getattr(args, arg)  != "" for arg in required_args):
+            for arg in required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+            parser_sequence.print_help()
+            sys.exit(1)
         query = {
             "referenceName": args.referenceName,
             "start": args.start,
@@ -144,12 +145,13 @@ def beacon_query():
             "collectionIds": args.collectionIds
         }
     elif args.command == "range":
-        advanced_required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start','end']
-        for arg in advanced_required_args:
-            if not getattr(args, arg):
-                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-                parser_sequence.print_help()
-                sys.exit(1)
+        required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start','end']
+        if any(getattr(args, arg)  != "" for arg in required_args):
+            for arg in required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+            parser_sequence.print_help()
+            sys.exit(1)
         query = {
             "referenceName": args.referenceName,
             "start": args.start,
@@ -162,32 +164,13 @@ def beacon_query():
         }
     # query gene_id_queries
     elif args.command == "gene":
-        advanced_required_args = ['database', 'collection', 'database_host', 'database_port','geneId']
-        for arg in advanced_required_args:
-            if not getattr(args, arg):
-                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-                parser_sequence.print_help()
-                sys.exit(1)
-        if args.database  == "":
-            print("Missing value -> database. Use -h or --help for usage details.")
-            parser_gene.print_help()
-            exit(1)
-        if args.collection == "":
-            print("Missing value -> collection. Use -h or --help for usage details.")
-            parser_gene.print_help()
-            exit(1)
-        if args.database_host == "":
-            print("Missing value -> database_host. Use -h or --help for usage details.")
-            parser_gene.print_help()
-            exit(1)
-        if args.database_port is None:
-            print("Missing value -> database_port. Use -h or --help for usage details.")
-            parser_gene.print_help()
-            exit(1)
-        if args.geneId == "":
-            print("Missing value -> geneId. Use -h or --help for usage details.")
-            parser_gene.print_help()
-            exit(1)
+        required_args = ['database', 'collection', 'database_host', 'database_port','geneId']
+        if any(getattr(args, arg)  != "" for arg in required_args):
+            for arg in required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+            parser_sequence.print_help()
+            sys.exit(1)
         query = {
             "geneId": args.geneId,
             "variantType": args.variantType,
@@ -198,12 +181,14 @@ def beacon_query():
         }
     # query bracket_queries
     elif args.command == "bracket":
-        advanced_required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start_minimum','start_maximum','end_minimum','end_maximum']
-        for arg in advanced_required_args:
-            if not getattr(args, arg):
-                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-                parser_sequence.print_help()
-                sys.exit(1)
+        required_args = ['database', 'collection', 'database_host', 'database_port','referenceName','start_minimum','start_maximum','end_minimum','end_maximum']
+        if any(getattr(args, arg)  != "" for arg in required_args):
+            for arg in required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+            parser_sequence.print_help()
+            sys.exit(1)
+        
         query = {
             "referenceName": args.geneId,
             "start": {"$gte": args.start_minimum, "$lte": args.start_maximum},
@@ -212,11 +197,13 @@ def beacon_query():
         }
     # Connect to MongoDB collection
     advanced_required_args = ['database_auth_source', 'database_user', 'database_password', 'database_name']
-    for arg in advanced_required_args:
-        if not getattr(args, arg):
-            print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-            parser_sequence.print_help()
-            sys.exit(1)
+    if any(getattr(args, arg)  != "" for arg in advanced_required_args):
+        for arg in advanced_required_args:
+            if not getattr(args, arg):
+                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+        parser_sequence.print_help()
+        sys.exit(1)
+
     collection = connect_to_mongodb(args)
     # Create a new dictionary with non-empty and non-default values
     filtered_query = {key: value for key, value in query.items() if value}
