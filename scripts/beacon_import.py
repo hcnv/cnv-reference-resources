@@ -7,6 +7,7 @@ import json
 import logging
 from dataclasses import dataclass
 import sys
+import re
 
 
 class MissingFieldException(Exception):
@@ -245,8 +246,6 @@ def download_dataset(gi: GalaxyInstance, dataset: GalaxyDataset, filename: str) 
         # TODO catch exceptions
         logging.critical(f"something went wrong while downloading file - {e} filename:{filename}")
 
-    return history_ids
-
 
 def import_to_mongodb(datafile_path):
     """
@@ -441,7 +440,7 @@ def MongoDBimporter():
                 logging.info(f"Can not open origins_file {args.origins_file}")
                 sys.exit(1)
     
-        path_dict = {f"{args.input_json_file}": f"/tmp/{args.input_json}_file-"}
+        path_dict = {f"{args.input_json_file}": f"/tmp/{args.input_json_file}_file-"}
         # load data from beacon histories
         for history_id in get_beacon_histories(gi):
             for dataset in get_datasets(gi, history_id):
