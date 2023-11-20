@@ -8,6 +8,7 @@ import logging
 from dataclasses import dataclass
 import sys
 import re
+import os
 
 
 class MissingFieldException(Exception):
@@ -245,6 +246,57 @@ def download_dataset(gi: GalaxyInstance, dataset: GalaxyDataset, filename: str) 
     except Exception as e:
         # TODO catch exceptions
         logging.critical(f"something went wrong while downloading file - {e} filename:{filename}")
+
+
+
+
+def persist_variant_origins(dataset_id: str, dataset: str, record):
+    """
+    Maps dataset_id to variant index in a separate file (which is hard-coded)
+
+        Note:
+            We do not want any information in the beacon database that may be used to reconstruct an actual file
+            uploaded to galaxy. Additionally, we do not want to change the dataset import functions provided by
+            beacon python.
+            Therefore, a separate file is maintained linking variant indices and dataset IDs. Since we do not interfer
+            with the actual variant import these indices have to be queried individually from beacons database.
+
+        Parameters:
+            dataset_id (str): Dataset id as returned by the galaxy api
+            dataset (VCF): The actual dataset
+            record (Any): Output file in which to persist the records
+
+        Returns:
+            Nothing.
+    """
+    try:
+        with open(dataset) as j_f:  # error
+                data = json.load(j_f)
+                for variant in data:
+                    try:
+                        ALT = variant['alternateBases']
+                        start = variant['position']['start'][0]
+                        REF = variant['referenceBases']
+                        var_id = variant['variantInternalId']
+                    except:
+                        print(f'some fields may not be found')
+                        continue
+                    try:
+                        res_list=db.get_variant_indices(start,REF,ALT,var_id)
+                        for res_id in res_list:
+                            record.write(f'data_id:{res_id} dataset_id:{dataset_id} alternateBases:{ALT} start:{start} referenceBases:{REF} variantInternalId:{var_id}\n')
+                    except:
+                        print(f'Some things were wrong when search this field and record')
+                        continue
+
+
+    except:
+        print(f'the dataset file probably does not exist dataset:{dataset_id}')
+        logging.info(f'the dataset file probably does not exist dataset:{dataset_id}')
+        return False
+
+
+
 
 
 def import_to_mongodb(datafile_path):
