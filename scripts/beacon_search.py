@@ -9,6 +9,7 @@ def common_arguments(parser):
     connection_group.add_argument("-P", "--db-port", type=int, default=27017, dest="database_port", help="port of the beacon database")
     
     advance_connection_group = parser.add_argument_group("Addvanced Connection to MongoDB")
+    advance_connection_group.add_argument('-a', '--advance-connection', action="store_true", dest="advance", default=False, help="Connect to beacon database with authentication")
     advance_connection_group.add_argument("-A", "--db-auth-source", type=str, metavar="ADMIN", default="", dest="database_auth_source", help="auth source for the beacon database")
     advance_connection_group.add_argument("-U", "--db-user", type=str, default="", dest="database_user", help="login user for the beacon database")
     advance_connection_group.add_argument("-W", "--db-password", type=str, default="", dest="database_password", help="login password for the beacon database")
@@ -22,17 +23,22 @@ def common_arguments(parser):
 
 def connect_to_mongodb(args):
     # Connect to MongoDB database with authentication
-    if args.database_user and args.database_password and args.database_auth_source and args.database_name:
-        client = MongoClient(f"mongodb://{args.database_user}:{args.database_password}@{args.database_host}:{args.database_port}/{args.database_name}?authSource={args.database_auth_source}")
+    if args.advance:
+        # check advanced input for connection
+        advanced_required_args = ['database_auth_source', 'database_user', 'database_password', 'database_name']
+        if any(getattr(args, arg)  == "" for arg in advanced_required_args):
+            for arg in advanced_required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+                    logging.info(f"Missing value -> {arg}")
+            parser.print_help()
+            sys.exit(1)
+        # Connect to MongoDB database with authentication
+        client = MongoClient(f"mongodb://{args.database_user}:{args.database_password}@{args.database_host}:{args.database_port}/{args.collection}?authSource={args.database_auth_source}")
     else:
         # Connect to MongoDB database without authentication
         client = MongoClient(args.database_host, args.database_port)
-
-    db = client[args.database]
-    collection = db[args.collection]
-
-    return collection
-
+    return client
 
 def beacon_query():
 
@@ -204,7 +210,9 @@ def beacon_query():
         parser_sequence.print_help()
         sys.exit(1)
 
-    collection = connect_to_mongodb(args)
+    client = connect_to_mongodb(args)
+    db = client[args.database]
+    collection = db[args.collection]
     # Create a new dictionary with non-empty and non-default values
     filtered_query = {key: value for key, value in query.items() if value}
     for v in collection.find(filtered_query):

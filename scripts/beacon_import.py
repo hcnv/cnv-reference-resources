@@ -297,15 +297,14 @@ def read_json_file(file_path):
         logging.info(f"JSON decoding error: {e}")
 
 
-
-
 def connect_arguments(parser):
     connection_group = parser.add_argument_group("Connection to MongoDB")
     connection_group.add_argument("-H", "--db-host", type=str, default="127.0.0.1", dest="database_host", help="Hostname/IP of the beacon database")
     connection_group.add_argument("-P", "--db-port", type=int, default=27017, dest="database_port", help="Port of the beacon database")
     
     advance_connection_group = parser.add_argument_group("Addvanced Connection to MongoDB")
-    advance_connection_group.add_argument("-A", "--db-auth-source", type=str, metavar="ADMIN", default="admin", dest="Database_auth_source", help="auth source for the beacon database")
+    advance_connection_group.add_argument('-a', '--advance-connection', action="store_true", dest="advance", default=False, help="Connect to beacon database with authentication")
+    advance_connection_group.add_argument("-A", "--db-auth-source", type=str, metavar="ADMIN", default="", dest="Database_auth_source", help="auth source for the beacon database")
     advance_connection_group.add_argument("-U", "--db-user", type=str, default="", dest="database_user", help="Login user for the beacon database")
     advance_connection_group.add_argument("-W", "--db-password", type=str, default="", dest="database_password", help="Login password for the beacon database")
     advance_connection_group.add_argument("-N", "--db-name", type=str, default="", dest="database_name", help="Name of the beacon database")
@@ -324,14 +323,60 @@ def connect_arguments(parser):
 
 def connect_to_mongodb(args):
     # Connect to MongoDB database with authentication
-    if args.database_user and args.database_password and args.database_auth_source and args.collection:
+    if args.advance:
+        # check advanced input for connection
+        advanced_required_args = ['database_auth_source', 'database_user', 'database_password', 'database_name']
+        if any(getattr(args, arg)  == "" for arg in advanced_required_args):
+            for arg in advanced_required_args:
+                if not getattr(args, arg):
+                    print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+                    logging.info(f"Missing value -> {arg}")
+            parser.print_help()
+            sys.exit(1)
+        # Connect to MongoDB database with authentication
         client = MongoClient(f"mongodb://{args.database_user}:{args.database_password}@{args.database_host}:{args.database_port}/{args.collection}?authSource={args.database_auth_source}")
     else:
         # Connect to MongoDB database without authentication
         client = MongoClient(args.database_host, args.database_port)
-
     return client
-    
+
+def clear_collections(db, args):
+    """
+    Clears collections in the MongoDB database based on the provided arguments.
+
+    Parameters:
+        db (MongoClient): MongoDB client connected to the database.
+        args (Namespace): Parsed command-line arguments.
+
+    Returns:
+        bool: True if collections are cleared successfully, False otherwise.
+    """
+    existing_names = db.list_collection_names()
+
+    if args.clear_all:
+        # Clear all collections
+        for name in existing_names:
+            try:
+                db[name].drop()
+            except Exception as e:
+                print(f'Warning: Failed to clear collection {name}. Error: {e}')
+                logging.info(f'Warning: Failed to clear collection {name}. Error: {e}')
+                return False
+        return True
+
+    elif args.clear_coll:
+        # Clear a specific collection
+        for name in existing_names:
+            if name == args.removed_col_name:
+                try:
+                    db[name].drop()
+                except Exception as e:
+                    print(f'Warning: Failed to clear collection {name}. Error: {e}')
+                    logging.info(f'Warning: Failed to clear collection {name}. Error: {e}')
+                    return False
+        return True
+
+    return False  # No action specified
 
 def MongoDBimporter():
     parser = argparse.ArgumentParser(description="Input arguments")
@@ -357,61 +402,25 @@ def MongoDBimporter():
     required_args = ['database', 'collection', 'database_host', 'database_port','input_json_file']
     for arg in required_args:
         if not getattr(args, arg):
-             print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-             logging.info(f"Missing value -> {arg}")
-    parser.print_help()
-    sys.exit(1)
-    
-    # check advanced input for connection
-    advanced_required_args = ['database_auth_source', 'database_user', 'database_password', 'database_name']
-    if any(getattr(args, arg)  != "" for arg in advanced_required_args):
-        print(args.database_auth_source)
-        for arg in advanced_required_args:
-            if not getattr(args, arg):
-                print(f"Missing value -> {arg}. Use -h or --help for usage details.")
-                logging.info(f"Missing value -> {arg}")
-        parser.print_help()
-        sys.exit(1)
-    
-    
+            print(f"Missing value -> {arg}. Use -h or --help for usage details.")
+            logging.info(f"Missing value -> {arg}")
+            parser.print_help()
+            sys.exit(1)
     
     # connect to beacon 
     client= connect_to_mongodb(args)
     db = client[args.database]
     collection = db[args.collection]
     
+    clear_collections(db, args)
     
     
-    # Clean all collections inside the database
-    if args.clear_all:
-        existing_names = db.list_collection_names()
-        for name in existing_names:
-            try:
-                db[name].drop()
-            except:
-                print(f'Warning: Failed to clear database user:{self.database_user} db:{self.database_name}')
-                logging.info(f'Warning: Failed to clear database user:{self.database_user} db:{self.database_name}')
-                return False
-        return True
-    
-    # Clean specific collection inside the database
-    if args.clear_coll:
-        existing_names = db.list_collection_names()
-        for name in existing_names:
-            if name == args.removed_col_name:
-                try:
-                    db[name].drop()
-                except:
-                    print(f'Warning: Failed to clear database user:{self.database_user} db:{self.database_name}')
-                    logging.info(f'Warning: Failed to clear database user:{self.database_user} db:{self.database_name}')
-                    return False
-        return True
     
     # connect to Galaxy instance 
     if args.galaxy:
         # Check galaxy inputs to connect to Galaxy
         galaxy_args = ['galaxy_url', 'galaxy_key']
-        if any(getattr(args, arg) != "" for arg in galaxy_args):
+        if any(getattr(args, arg) == "" for arg in galaxy_args):
             for arg in galaxy_args:
                 if not getattr(args, arg):
                     print(f"Missing value -> {arg}. Use -h or --help for usage details.")
