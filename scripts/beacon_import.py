@@ -491,8 +491,8 @@ def MongoDBimporter():
                 print(f"Can not open origins_file {args.origins_file}")
                 logging.info(f"Can not open origins_file {args.origins_file}")
                 sys.exit(1)
-    
-        path_dict = {f"{args.input_json_file}": f"/tmp/{args.input_json_file}_file-"}
+        json_file= args.input_json_file.split('.')[0]
+        path_dict = {f"{json_file}": f"/tmp/{json_file}_file-"}
         # load data from beacon histories
         for history_id in get_beacon_histories(gi):
             for dataset in get_datasets(gi, history_id):
