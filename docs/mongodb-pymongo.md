@@ -13,13 +13,24 @@ Create a YAML file named *docker-compose.yaml* and copy this script to it.
 version: '3.6'
 services:
 
-  mongodb:
+  mongo-client:
     image: mongo:3.6
     restart: unless-stopped
     volumes:
-      - ./<Directory/db>:/data/db
+      - ./beacon/db:/data/db
     ports:
-      - "27027:27017"
+      - "27017:27017"
+
+  mongo-express:
+    image: mongo-express
+    restart: unless-stopped
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo-client
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_BASICAUTH_USERNAME=admin
+      - ME_CONFIG_BASICAUTH_PASSWORD=adminpass
+    ports:
+      - "8081:8081"
 ``` 
 
 
@@ -28,7 +39,6 @@ Run the commands below to create a docker container.
 
 ```
 docker-compose up -d
-docker run -d -p 27016:27017 --name mongo-client mongo:3.6
 docker exec -it mongo-client bash
 ```
 
